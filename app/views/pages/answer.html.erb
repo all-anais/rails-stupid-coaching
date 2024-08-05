@@ -1,0 +1,22 @@
+<div class="container col-lg-6 align-items-center">
+  <div class="text-center p-3 m-4">
+  <h1>Stupid Coach</h1>
+  </div>
+
+  <div class="text-center p-3 mb-2 bg-warning text-dark bg-light">
+    <p> <%=@my_question %> <p>
+    <p>-You</p>
+  </div>
+
+  <div class="text-center p-3 mb-2 bg-warning text-dark bg-light">
+    <%=@coach_answer %>
+    <p>- Your coach</p>
+  </div>
+
+    <div class="text-center p-3 mb-2 text-dark">
+      <div class = "btn btn-info" type="submit">
+        <%= link_to "Ask an other silly question ?", ask_path%>
+      </div>
+    </div>
+  </div>
+</div>
